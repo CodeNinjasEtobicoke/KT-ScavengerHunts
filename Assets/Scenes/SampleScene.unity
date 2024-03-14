@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 919825731887471161, guid: 808b89f9746b7b7498a3a88b37ef5221,
         type: 3}
       propertyPath: jumpStrength
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 919825731887471166, guid: 808b89f9746b7b7498a3a88b37ef5221,
         type: 3}
@@ -762,6 +762,10 @@ GameObject:
   - component: {fileID: 1645364382}
   - component: {fileID: 1645364381}
   - component: {fileID: 1645364380}
+  - component: {fileID: 1645364384}
+  - component: {fileID: 1645364383}
+  - component: {fileID: 1645364385}
+  - component: {fileID: 1645364386}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -845,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645364370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 1.13, z: 5}
+  m_LocalPosition: {x: 0.18, y: 1.07, z: 5}
   m_LocalScale: {x: 57.554302, y: 22.874216, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -963,8 +967,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.50000006, y: 0}
-  - {x: 0.50000006, y: 0}
+  - {x: -0.13480127, y: -0.29923528}
+  - {x: -0.1280826, y: -0.30158365}
+  - {x: 0.008149967, y: -0.3011104}
 --- !u!68 &1645364381
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1003,6 +1008,80 @@ EdgeCollider2D:
   - {x: -0.42912865, y: -0.12739715}
   - {x: -0.42820582, y: -0.12768115}
   - {x: -0.37901855, y: -0.13249302}
+--- !u!68 &1645364383
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645364370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.09968978, y: 0.19008721}
+  - {x: -0.06820486, y: 0.1998895}
+  - {x: -0.036264658, y: 0.19325535}
+--- !u!68 &1645364384
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645364370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.42195213, y: -0.2661222}
+  - {x: -0.38370377, y: -0.26929024}
+--- !u!68 &1645364385
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645364370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.010421798, y: -0.15893534}
+  - {x: 0.029112697, y: -0.12471254}
+  - {x: 0.19212744, y: -0.14869407}
+--- !u!68 &1645364386
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645364370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.35099116, y: -0.18997277}
+  - {x: -0.16129626, y: -0.08674855}
 --- !u!1 &2004717304
 GameObject:
   m_ObjectHideFlags: 0
